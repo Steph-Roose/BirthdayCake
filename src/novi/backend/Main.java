@@ -1,35 +1,26 @@
 package novi.backend;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Main {
 
     public static void main(String[] args) {
-        //leaves top
-        Tree leaves = new Tree();
-        leaves.setLeaves("");
-        System.out.print(leaves.getLeaves());
+        //candles
+        Candles candleFire = new Candles();
+        candleFire.buildCandles();
 
-        //bark
-        Tree bark = new Tree();
-        bark.setBark("");
-        System.out.print(bark.getBark());
+        //candle base
+        Candles candleBase = new Candles();
+        candleBase.getCandleBase();
 
-        //base
-        Base base1 = new Base();
-        base1.setBase1("");
-        System.out.print(base1.getBase1());
+        //cake
+        Base cake1 = new Base();
+        cake1.getCake1();
 
-        Base base2 = new Base();
-        base2.setBase2("");
-        System.out.print(base2.getBase2());
+        Base cakeFilling = new Base();
+        cakeFilling.makeFillingCake();
 
-        System.out.print(base1.getBase1());
+        cake1.getCake1();
 
-        Base base3 = new Base();
-        base3.setBase3("");
-        System.out.println(base3.getBase3());
-
-
+        Base cake2 = new Base();
+        cake2.getBase3();
     }
 }
